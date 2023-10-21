@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    --primary-color: #ff4f60;
+    --secondary-color: #33c390;
+}
+.font-secondary {
+    font-family: Cormorant;
+}
+.color-primary {
+    color: var(--primary-color);
+}
+.b-primary {
+    background-color: var(--primary-color);
+}
+.b-secondary {
+    background-color: var(--secondary-color);
+}
+.text-gray {
+    color: #9c9da3;
+}
+.br-primary {
+    border: 1px solid rgb(222, 222, 222);
+}
+.fs-52 {
+    font-size: 52px;
+}
+.fs-64 {
+    font-size: 64px;
+}
+.h-80 {
+    height: 80px;
+    object-fit: cover;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.text-hover-primary {
+    transition: 0.5s;
+}
+.text-hover-primary:hover {
+    color: #ff4f60 !important;
+}
+.bg-hover-primary {
+    transition: 0.5s;
+}
+.bg-hover-primary:hover {
+    background-color: #ff4f60 !important;
+    color: #fff;
+    border-color: transparent !important;
+}
+.healine h2::after {
+    content: "";
+    background-color: #ff4f60;
+    width: 100px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.banner {
+    width: 90%;
+    margin: 0 auto;
+}
+.modal {
+    --bs-modal-width: 80%;
+}
+.popular h2::after {
+    margin-left: 0;
+}
+@media (max-width: 991px) {
+    .carousel-inner {
+        height: 100vh !important;
+    }
+    .carousel-inner img {
+        height: 100% !important;
+        object-fit: cover;
+    }
+    .carousel-item {
+        height: 100%;
+    }
+    .carousel-caption h3 {
+        font-size: 50px;
+    }
+    .room .btn-1 {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .social {
+        display: none;
+    }
+    .fs-52 {
+        font-size: 35px;
+    }
+
+}
+@media (max-width: 479px) {
+    .hotline {
+        display: none;
+    }
+    .navbar-brand img {
+        width: 150px !important;
+    }
+    .room .night{
+        width: 90%;
+        margin-bottom: 10px !important;
+    }
+    
+}
